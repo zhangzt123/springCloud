@@ -1,0 +1,24 @@
+
+spring:
+  application:
+    name: springboot_test
+  datasource:
+    url: jdbc:mysql:/10.0.68.108:3306/test_xmysgl
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+#配置服务器端口，默认为8080
+#用户回话session过期时间，以秒为单位
+server:
+  session-timeout: 1000000
+  port: 8080
+  servlet:
+    context-path: /index #配置访问路径，默认为
+  tomcat:
+    uri-encoding: utf-8 #配置Tomcat编码，默认为UTF-8
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://10.0.68.101:8761/eureka/
