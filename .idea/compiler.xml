@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="eureka" />
         <module name="eureka1" />
+        <module name="SpringBoot" />
         <module name="springCloud" />
       </profile>
     </annotationProcessing>
