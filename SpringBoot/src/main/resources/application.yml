@@ -1,6 +1,0 @@
-server:
-  servlet:
-    context-path: /
-  port: 8080
-mybatis-plus:
-  config-location: classpath:Mappers/*mapper.xml

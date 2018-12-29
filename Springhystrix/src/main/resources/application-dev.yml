@@ -1,0 +1,15 @@
+server:
+  port: 2222
+  tomcat:
+    uri-encoding: UTF-8
+  servlet:
+    context-path: /
+spring:
+  application:
+    name: Hystrix
+  profiles:
+    active: dev
+eureka:
+  client:
+    service-url:
+      defaultZone: http://LAPTOP-BPGF8R1O:8761/eureka/,http://LAPTOP-BPGF8R1O:8762/eureka/

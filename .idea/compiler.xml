@@ -7,12 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="eureka" />
-        <module name="eureka1" />
+        <module name="ribbon_server" />
         <module name="SpringBoot" />
         <module name="springCloud" />
+        <module name="Springhystrix" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="eurekabak" target="1.8" />
       <module name="springbootdemo" target="1.8" />
       <module name="webflux" target="1.8" />
     </bytecodeTargetLevel>
