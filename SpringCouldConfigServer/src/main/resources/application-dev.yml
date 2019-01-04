@@ -21,7 +21,7 @@ spring:
 #              pattern:
 #              uri: https://github.com/zhangzt123/springCloud
 #              force-pull: true
-          search-paths: springcloudconfig/euruka/,springcloudconfig/ribbon/
+          search-paths: springcloudconfig/euruka/,springcloudconfig/ribbon/,springcloudconfig/configclienttest/
 #          search-paths: springcloudconfig/euruka/**,springcloudconfig/ribbon/** # 错误示范
 #          force-pull: true
           basedir: /gitConfig # git克隆到本地的位置  当前盘符下的该文件夹下

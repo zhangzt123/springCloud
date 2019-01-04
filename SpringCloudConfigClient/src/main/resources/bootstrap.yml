@@ -1,0 +1,10 @@
+server:
+  port: 4445
+spring:
+  application:
+    name: configclient_test
+  cloud:
+    config:
+      profile: dev
+      label: master
+      uri: http://localhost:4444/
