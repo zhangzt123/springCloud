@@ -1,0 +1,45 @@
+# 进阶配置
+server:
+  port: 4444
+
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/zhangzt123/springCloud   #  默认git仓库
+          repos:   # 多git仓库时使用
+            local1: #本地测试
+               pattern:  euruka/* #  匹配应用名称
+               uri: file:///F:/IdeaProjects/springCloud/
+               local2:  #本地测试
+                 pattern:  #  匹配应用名称
+                 uri: file:///F:/IdeaProjects/springCloud/
+#            prod: #生产
+#              pattern:
+#              uri: https://github.com/zhangzt123/springCloud
+#              force-pull: true
+          search-paths: springcloudconfig/euruka/,springcloudconfig/ribbon/
+#          search-paths: springcloudconfig/euruka/**,springcloudconfig/ribbon/** # 错误示范
+#          force-pull: true
+          basedir: /gitConfig # git克隆到本地的位置  当前盘符下的该文件夹下
+          default-label: master # git默认分支
+          password:  # git仓库密码
+          username:  # 用户名
+        health:
+          repositories:
+            check:
+              name: euruka
+              label: master
+              profiles: peer1
+eureka:
+  client:
+    service-url:
+      defaultZone:  http://LAPTOP-BPGF8R1O:8762/eureka/,http://LAPTOP-BPGF8R1O:8761/eureka/LAPTOP
+
+
+logging:
+  pattern:
+    level: debug

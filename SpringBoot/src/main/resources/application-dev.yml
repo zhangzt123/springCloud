@@ -124,4 +124,5 @@ spring:
 ########################################################################################
 eureka:
   client:
-    service-url:      defaultZone: http://LAPTOP-BPGF8R1O:8761/eureka/,http://LAPTOP-BPGF8R1O:8762/eureka/
+    service-url:
+     defaultZone: http://LAPTOP-BPGF8R1O:8761/eureka/,http://LAPTOP-BPGF8R1O:8762/eureka/

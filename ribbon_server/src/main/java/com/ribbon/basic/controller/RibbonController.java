@@ -20,4 +20,11 @@ public class RibbonController {
         return restTemplate.getForEntity("http://springbootservice/basic/helloworld",String.class).getBody();
     }
 
+
+    @RequestMapping(value = "getconfigserver",method = RequestMethod.GET)
+    String getconfigserver() throws Exception
+    {
+        return restTemplate.getForEntity("http://configserver/euruka/peer1",String.class).getBody();
+    }
+
 }
