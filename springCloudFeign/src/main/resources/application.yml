@@ -1,0 +1,21 @@
+server:
+  port: 9080
+spring:
+  application:
+    name: feignclient
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone:  http://LAPTOP-BPGF8R1O:8762/eureka/,http://LAPTOP-BPGF8R1O:8761/eureka/LAPTOP
+
+feign:
+  compression:
+    request:
+      enable: true
+      mime-types: text/xml,application/xml,application/json # 制定需压缩的请求类型
+      min-request-size: 2048 # 指定大小 超过这个大小对其进行压缩
+    response:
+      enable: true
+#是否开启Gzip 压缩减少通信中的性能损耗
